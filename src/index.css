@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (max-width: 600px) {
+  .image{
+    display: none;
+  }
+  .box{
+    width: 100%;
+    padding:0px;
+  }
+  body{
+    background: url('bgmob.jpg');
+    height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+  }
+}

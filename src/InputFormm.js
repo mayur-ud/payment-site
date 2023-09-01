@@ -1,6 +1,8 @@
 import { Button, TextInput,Box,Image, NumberInput } from '@mantine/core'
 import React, { useState } from 'react'
 import upiqr from "upiqr";
+import council from './manitlogo.jpg'
+
 
 const App = () => {
   const [name, setName] = React.useState('');
@@ -51,16 +53,29 @@ const App = () => {
 
   return (
     <Box
-      sx={{
-        maxWidth: '100%', // Full width on small screens
-        width: '30%', // Adjust to your desired width
-        '@media screen and (max-width: 768px)': {
-          width: '70%', // Adjust for smaller screens
-        },
-        padding:'12px',
-        
+    class="box"
+      style={{
+        width: "100%",
+padding: "5px 19px"
+
       }}
     >
+
+  <img
+      
+      alt=''
+      src={council}
+     class="krsn"
+      style={{width: "150px",
+        height: "150px",
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "block",
+        padding: "35px 0px",
+       }}
+    />
+
+      
       <TextInput
         placeholder="Your name"
         label="Your name"
@@ -88,7 +103,7 @@ const App = () => {
         onChange={setAmt}
       />
 
-      <Button my="md" onClick={() => UPIGen()}>
+      <Button my="md" onClick={() => UPIGen()} style={{backgroundColor:"#f1b464",borderRadius:"0px",width:"100%"}}>
         Donate
       </Button>
 

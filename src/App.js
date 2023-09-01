@@ -8,9 +8,11 @@ function App() {
   return (
     <Flex   
     direction="row"
+    
+
     >
       <div className="image">
-      <img
+      { <img
       // className="background-container"
       alt=''
       style={{
@@ -21,7 +23,7 @@ function App() {
         width : '75vw',
         height: '100vh',
       }}
-    />
+    /> }
       </div>
         <Inputformm/>
     </Flex>
